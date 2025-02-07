@@ -25,7 +25,7 @@ class HomeScreen extends StatelessWidget {
       appBar: AppBar(
         title: Text('Sobat Temak'),
         leading: CircleAvatar(
-          backgroundImage: AssetImage('images/google.jpeg'), // Add profile picture asset
+          backgroundImage: AssetImage('images/img2.png'), // Add profile picture asset
         ),
         actions: [
           IconButton(
@@ -188,7 +188,7 @@ class PostSection extends StatelessWidget {
             padding: const EdgeInsets.all(8.0),
             child: Text('New Post Added Lorem Ipsum is a Dummy Text.'),
           ),
-          Image.network('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzeMj6wdNFoehc00rySvqLxLlxUNwc-sEexQ&s',width: 300 ,height: 120),
+          Image.asset('images/img-1.png',width: 300 ,height: 120),
           SizedBox(height: 20,),
         ],
       ),
