@@ -118,7 +118,7 @@ class ItemCard extends StatelessWidget {
         padding: const EdgeInsets.all(8.0),
         child: Column(
           children: [
-            Image.asset('images/google.jpeg', width: 60, height: 60), // Add item image asset
+            Image.asset('images/img3.png', width: 60, height: 60), // Add item image asset
             Text('\$10', style: TextStyle(fontWeight: FontWeight.bold)),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -144,7 +144,7 @@ class ProductCard extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Expanded(
-            child: Image.asset('images/google.jpeg', fit: BoxFit.cover), // Add product image asset
+            child: Image.asset('images/img3.png', fit: BoxFit.cover), // Add product image asset
           ),
           Padding(
             padding: const EdgeInsets.all(8.0),
