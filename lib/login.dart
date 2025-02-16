@@ -245,10 +245,10 @@ class _LoginState extends State<Login>{
     return Scaffold(
       body: Container(
         width: double.infinity,
-        padding: EdgeInsets.symmetric(vertical: 30),
+        padding: EdgeInsets.symmetric(vertical: 50),
         decoration: BoxDecoration(
           gradient: LinearGradient(
-              colors: [Colors.deepPurple, Colors.purple],
+              colors: [Colors.deepPurple, Colors.purpleAccent],
               begin: Alignment.topCenter,
               end: Alignment.bottomCenter,
           ),
@@ -258,10 +258,10 @@ class _LoginState extends State<Login>{
           children: [
             Image(
                 image: AssetImage("images/img-1.png"),
-                width: 200,
+                width: 180,
             ),
 
-            SizedBox(height: 10,),
+            SizedBox(height: 20,),
 
             Column(
               children: [
@@ -279,8 +279,8 @@ class _LoginState extends State<Login>{
                         decoration: isNewUser ? null : BoxDecoration(
                           gradient: LinearGradient(
                             colors: [Colors.deepPurple, Colors.purple],
-                            begin: Alignment.topCenter,
-                            end: Alignment.bottomCenter,
+                            begin: Alignment.centerLeft,
+                            end: Alignment.centerRight,
                           ),
                           borderRadius: BorderRadius.circular(30),
                         ),
@@ -294,7 +294,7 @@ class _LoginState extends State<Login>{
                               backgroundColor: Colors.transparent,
                               shadowColor: Colors.transparent,
                               foregroundColor: isNewUser ? Colors.deepPurple : Colors.white,
-                              padding: EdgeInsets.symmetric(horizontal: 30,vertical: 20),
+                              padding: EdgeInsets.symmetric(horizontal: 40,vertical: 15),
                             ),
                             child: Text("Existing")
                         ),
@@ -303,8 +303,8 @@ class _LoginState extends State<Login>{
                         decoration: isNewUser ? BoxDecoration(
                           gradient: LinearGradient(
                             colors: [Colors.deepPurple, Colors.purple],
-                            begin: Alignment.topCenter,
-                            end: Alignment.bottomCenter,
+                            begin: Alignment.centerLeft,
+                            end: Alignment.centerRight,
                           ),
                           borderRadius: BorderRadius.circular(30),
                         ) : null,
@@ -318,7 +318,7 @@ class _LoginState extends State<Login>{
                               backgroundColor: Colors.transparent,
                               shadowColor: Colors.transparent,
                               foregroundColor: isNewUser ? Colors.white : Colors.deepPurple,
-                              padding: EdgeInsets.symmetric(horizontal: 30,vertical: 20),
+                              padding: EdgeInsets.symmetric(horizontal: 40,vertical: 15),
                             ),
                             child: Text("New User")
                         ),
