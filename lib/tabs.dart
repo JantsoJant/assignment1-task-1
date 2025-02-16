@@ -15,7 +15,7 @@ class UserTabs extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 20),
               child: Container(
-                padding: EdgeInsets.fromLTRB(20, 10, 20, 40),
+                padding: EdgeInsets.fromLTRB(20, 5, 20, 50),
                 decoration: BoxDecoration(
                   color: Colors.white,
                   borderRadius: BorderRadius.circular(20),
@@ -23,7 +23,7 @@ class UserTabs extends StatelessWidget {
                 child: Column(
                   children: isNewUser? [
                     TextField(
-                      decoration: InputDecoration(labelText: "Full Name",suffixIcon: Icon(Icons.person_outline,color: Colors.purple,)),
+                      decoration: InputDecoration(labelText: "Full Name",suffixIcon: Icon(Icons.person_outline,color: Colors.purple)),
                     ),
                     SizedBox(height: 10,),
                     TextField(
@@ -53,15 +53,15 @@ class UserTabs extends StatelessWidget {
               ),
             ),
             Positioned(
-                bottom: -20,
+                bottom: -25,
                 left: 0,
                 right: 0,
                 child: Center(
                   child: Container(
                     decoration: BoxDecoration(
                       gradient: LinearGradient(
-                        colors: [Colors.deepPurple, Colors.purple],
-                        begin: Alignment.centerLeft,
+                        colors: [Colors.purpleAccent, Colors.deepPurple],
+                        begin: Alignment.topCenter,
                         end: Alignment.bottomCenter,
                       ),
                       borderRadius: BorderRadius.circular(30),
@@ -72,7 +72,7 @@ class UserTabs extends StatelessWidget {
                           backgroundColor: Colors.transparent,
                           shadowColor: Colors.transparent,
                           foregroundColor: Colors.white,
-                          padding: EdgeInsets.symmetric(horizontal: 40, vertical: 20),
+                          padding: EdgeInsets.symmetric(horizontal: 40, vertical: 15),
                         ),
                         child: Text(isNewUser? "Sign Up" : "Log In")
                     ),
@@ -120,18 +120,18 @@ class UserTabs extends StatelessWidget {
                       ],
                     ),
                   ),
-                  SizedBox(height: 10,),
+                  SizedBox(height: 20,),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       CircleAvatar(
-                        radius: 20,
+                        radius: 22,
                         backgroundColor: Colors.grey[100],
                         child: Image.asset("images/fb.jpeg", height: 25,),
                       ),
                       SizedBox(width: 10,),
                       CircleAvatar(
-                        radius: 20,
+                        radius: 22,
                         backgroundColor: Colors.grey[100],
                         child: Image.asset("images/google.jpeg",height: 25,),
                       )
